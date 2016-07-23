@@ -1,0 +1,61 @@
+<!--Author : Dominic Giles-->
+<!--Date : 21/7/2016-->
+<!--File : products.html-->
+<!--Description : HTML to display simple table-->
+<!--Javascript Libraries : JQuery, JQuery UI, DataTable-->
+<!--CSS Files : BootStrap, Font-Awesome-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Products 2</title>
+    <!--Bootstrap Style Sheets-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <!--JQuery Libraries and CSS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <!-- DataTable -->
+    <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+    <!--<link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">-->
+    <script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
+
+    <!--My Script-->
+    <script src="liketable.js"></script>
+    <style>
+        .icon-thumbs-up {
+            color: Lightgrey
+        }
+
+        .icon-thumbs-up.like{
+            color: #00c4ff
+        }
+
+        .icon-thumbs-up.unlike{
+            color: Lightgrey
+        }
+
+        .icon-thumbs-up:hover {
+            color: #00e6ff;
+        }
+
+    </style>
+</head>
+<body>
+<table id="products" class="table table-striped table-bordered" cellspacing="0" width="100%">
+    <thead>
+    <tr>
+        <th>Product ID</th>
+        <th>Product Name</th>
+        <th>Description</th>
+        <th>Category ID</th>
+        <th>Status</th>
+        <th>List Price</th>
+        <th>Like Product</th>
+    </tr>
+    </thead>
+</table>
+</body>
+</html>
